@@ -1,0 +1,74 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-color: rgb(67, 67, 88);
+  width: 100%;
+}
+
+div.album{
+  position: relative;
+  width: 65%;
+  margin: 30px auto;
+  text-align: center;
+}
+div.album>div.tittle{
+  width: 100%;
+  margin: 15px;
+  display: flex;
+  font-size: 30px;
+  font-weight: bolder;
+  color: rgb(240, 110, 40);
+  justify-content: center;
+}
+div.album>.picture{
+  position: relative;
+  width: 100%;
+  margin: 0px auto;
+  padding: 0;
+  border-radius: 8px;
+  height: 500px;
+  box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.05),
+              inset -5px -5px 5px rgba(225, 225, 225, 0.5),
+              5px 5px 5px rgba(0, 0, 0, 0.05),
+              -5px -5px 5px rgba(225, 225, 225, 0.5);
+}
+div.album>.picture>img{
+  max-width: 85%;
+  max-height: 95%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 8px;
+}
+
+/* Arrow */
+.arrow {
+  padding: 0.8rem; /* Arrow size */
+  box-shadow: 1px -1px 0 1px plum inset;
+  -webkit-box-shadow: 2px -2px plum inset;
+  border: solid transparent;
+  border-width: 0 0 2rem 2rem;
+  transition: 0.2s;
+}
+.arrow:hover {
+  box-shadow: 2px -2px 0 2px orchid inset;
+  -webkit-box-shadow: 4px -4px orchid inset;
+}
+.arrow-up    { transform:rotate(135deg)}
+.arrow-right { transform:rotate(225deg)}
+.arrow-down  { transform:rotate(-45deg)}
+.arrow-left  { transform: rotate(45deg)}
+
+.arrow-left{
+  position: absolute;
+  margin:-67px 0 0 -67px;
+  top: calc(50% + calc(67px / 2));
+  left: 35px;
+}
+.arrow-right{
+  position: absolute;
+  margin:-67px 0 0 -67px;
+  top: calc(50% + calc(67px / 2));
+  right: calc(35px - 67px);
+}
