@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js/cart.js"></script>
+    <script src="js/slideshow.js"></script>
+    <script src="js/login.js"></script>
+</head>
+<body onload="showcountsp(); loadAnh(); login();">
+    <div class="giohang">
+        <a onclick="showcart();"><img src="images/cart.png"><span id="countsp">0</span></a>
+    </div>
+    <div id="showcart">
+        <table>
+            <tr>
+                <th style="width: 10px;">STT</th>
+                <th>Hình</th>
+                <th>Tên sản phẩm</th>
+                <th>Đơn giá</th>
+                <th>Số lượng</th>
+                <th>Thành tiền ($)</th>
+            </tr>
+            <tbody id="mycart">
+            </tbody>
+            <tr>
+                <a href="thanhtoan.html"><button type="button" class="thanhtoan" style="width: 300px; height: 50px; border-radius: 8px; margin: 10px 35%; font-weight: bolder;">Chốt đơn và thanh toán</button></a>
+            </tr>
+        </table>
+    </div>
+    <div class="boxcenter">
+        <div class="row mb header">
+            <h1> SIÊU THỊ TRỰC TUYẾN</h1>
+        </div>
+
+        <div class="row mb menu">
+            <ul>
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="thanhtoan.html">Giỏ hàng</a></li>
+                <li><a href="Gallery/Gallery.html">Thư viện ảnh</a></li>
+                <li><a href="#">Liên hệ</a></li>
+                <li><a href="#">Góp ý</a></li>
+                <li><a href="#">Hỏi đáp</a></li>
+                <li style="float: right;"><a href="Form/FormAngular.html" id="login" onclick="logout()" style="font-weight: bolder; font-size: larger;"></a></li>
+            </ul>
+        </div>
+        <div class="row mb ">
+            <div class="row">
+                <div class="banner mb">
+                    <img src="images/0.png" id="Anh">
+                </div>
+            </div>
+            <div class="row">
+                <div class="boxsp mr">
+                    <div class="row img"><img src="images/0.png" alt=""></div>
+                    <p>$<span>1599</span></p>
+                    <a href="#">Iphone 13 Pro Max [1-TB]</a>
+                    <input type="number" name="soluong" min="1" max="10" value="1">
+                    <button onclick="themvaogiohang(this)">Đặt hàng</button>
+                </div>
+                <div class="boxsp mr">
+                    <div class="row img"><img src="images/1.png" alt=""></div>
+                    <p>$<span>1899</span></p>
+                    <a href="#">Samsung Galaxy Z Fold3 5G [512-GB]</a>
+                    <input type="number" name="soluong" min="1" max="10" value="1">
+                    <button onclick="themvaogiohang(this)">Đặt hàng</button>
+                </div>
+                <div class="boxsp ">
+                    <div class="row img"><img src="images/2.png" alt=""></div>
+                    <p>$<span>134000</span></p>
+                    <a href="#">Nokia 8800 Arte Gold</a>
+                    <input type="number" name="soluong" min="1" max="10" value="1">
+                    <button onclick="themvaogiohang(this)">Đặt hàng</button>
+                </div>
+                <div class="boxsp mr">
+                    <div class="row img"><img src="images/3.png" alt=""></div>
+                    <p>$<span>1798</span></p>
+                    <a href="#">Sony Xperia Pro-I 5G [512GB]</a>
+                    <input type="number" name="soluong" min="1" max="10" value="1">
+                    <button onclick="themvaogiohang(this)">Đặt hàng</button>
+                </div>
+                <div class="boxsp mr">
+                    <div class="row img"><img src="images/4.png"></div>
+                    <p>$<span>1399</span></p>
+                    <a href="#">Motorola Razr 5G [256GB]</a>
+                    <input type="number" name="soluong" min="1" max="10" value="1">
+                    <button onclick="themvaogiohang(this)">Đặt hàng</button>
+                </div>
+                <div class="boxsp ">
+                    <div class="row img"><img src="images/5.png" alt=""></div>
+                    <p>$<span>689</span></p>
+                    <a href="#">Oppo Reno 10x Zoom [256GB]</a>
+                    <input type="number" name="soluong" min="1" max="10" value="1">
+                    <button onclick="themvaogiohang(this)">Đặt hàng</button>
+                </div>
+                <div class="boxsp mr">
+                    <div class="row img"><img src="images/6.png" alt=""></div>
+                    <p>$<span>1149</span></p>
+                    <a href="#">Acer Nitro 5 AN515-57 54MV</a>
+                    <input type="number" name="soluong" min="1" max="10" value="1">
+                    <button onclick="themvaogiohang(this)">Đặt hàng</button>
+                </div>
+                <div class="boxsp mr">
+                    <div class="row img"><img src="images/7.png" alt=""></div>
+                    <p>$<span>1999</span></p>
+                    <a href="#">Predator Triton 500 SE</a>
+                    <input type="number" name="soluong" min="1" max="10" value="1">
+                    <button onclick="themvaogiohang(this)">Đặt hàng</button>
+                </div>
+                <div class="boxsp ">
+                    <div class="row img"><img src="images/8.png" alt=""></div>
+                    <p>$<span>3699</span></p>
+                    <a href="#">ASUS ROG Zephyrus S17 GX703 GX703HS-KF004R</a>
+                    <input type="number" name="soluong" min="1" max="10" value="1">
+                    <button onclick="themvaogiohang(this)">Đặt hàng</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/cart.js"></script>
+</body>
+
+</html>
