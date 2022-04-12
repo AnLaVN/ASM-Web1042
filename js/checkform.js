@@ -13,7 +13,7 @@ function check(){
     sdt.value = "";
     Email.value = "";
     sessionStorage.clear();
-    window.open("https://github.com/AnLaVN/ASM-Web1042/index.html");
+    window.open("https://anlavn.github.io/ASM-Web1042/index.html");
 }
 function checkHT() {
     var HoTen = document.getElementById("hoten");
