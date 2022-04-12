@@ -93,11 +93,10 @@ function tinhlaidon(x){
                     sessionStorage.setItem("ssgiohang", JSON.stringify(giohang));
                 }
             }
-            
+            var countsp = parseInt(sessionStorage.getItem("countsp") - 1);
+            sessionStorage.setItem("countsp", countsp);
+            showcountso();   
         }
-        var countsp = parseInt(sessionStorage.getItem("countsp") - 1);
-        sessionStorage.setItem("countsp", countsp);
-        showcountso();
     }else{
         for(let i = 0; i < giohang.length; i++){
             if(giohang[i][1] == tensp){
@@ -110,6 +109,7 @@ function tinhlaidon(x){
     }
     document.getElementById("tongtien").innerHTML = tongdon;
     sessionStorage.setItem("ssgiohang", JSON.stringify(giohang));
+    laydon();
 }
 function addcart() {
     var gh_str = sessionStorage.getItem("ssgiohang");
