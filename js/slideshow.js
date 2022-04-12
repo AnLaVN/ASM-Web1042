@@ -4,7 +4,7 @@ var index = 0;
 function loadAnh(){
     for(var i = 0; i < n ; i++){
         arrAnh[i] = new Image();
-        arrAnh[i].src = "/images/"+i+".png";
+        arrAnh[i].src = "https://anlavn.github.io/ASM-Web1042/images/"+i+".png";
     }
 }
 function Next(){
