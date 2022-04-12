@@ -4,6 +4,15 @@ function check(){
     if( !checkSDT()   ) return false;
     if( !checkEmail() ) return false;
     alert("Đặt hàng thành công");
+    var HoTen = document.getElementById("hoten");
+    var DiaChi = document.getElementById("diachi");
+    var sdt = document.getElementById("dienthoai");
+    var Email = document.getElementById("email");
+    HoTen.value = "";
+    DiaChi.value = "";
+    sdt.value = "";
+    Email.value = "";
+    sessionStorage.clear();
 }
 function checkHT() {
     var HoTen = document.getElementById("hoten");
