@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="Form.css">
+    <script src="Form.js"></script>
+    <title>Form Đăng Kí</title>
+</head>
+<body>
+    <form name="DangKi">
+        <h2>ĐĂNG KÍ THÀNH VIÊN</h2>
+        <div class="hang">
+            <div class="name">Mã Sinh Viên</div>
+            <input type="text" name="MaSV">
+        </div>
+        <div class="hang">
+            <div class="name">Họ Tên</div>
+            <input type="text" name="HoTen">
+        </div>
+        <div class="hang">
+            <div class="name">Email</div>
+            <input type="email" name="Email">
+        </div>
+        <div class="hang">
+            <div class="name">Giới Tính</div>
+            <fieldset>
+                <label for="Men"><input type="radio" name="GioiTinh" id="Men"> Nam</label>
+                <label for="Women"><input type="radio" name="GioiTinh" id="Women"> Nữ</label>
+                <label id="errorGT" style="color: brown; font-size: 24px; font-style: italic; cursor: auto;"></label>
+            </fieldset>
+        </div>
+        <div class="hang">
+            <div class="name">Sở Thích</div>
+            <fieldset>
+                <label><input type="checkbox" name="SoThich" id="Reading"> Đọc sách</label>
+                <label><input type="checkbox" name="SoThich" id="Travel"> Du Lịch</label>
+                <label><input type="checkbox" name="SoThich" id="Foods"> Ẩm Thực</label>
+                <label><input type="checkbox" name="SoThich" id="Music"> Âm Nhạc</label>
+                <label><input type="checkbox" name="SoThich" id="Khac"> Khác</label>
+                <label id="errorST" style="color: brown; font-size: 24px; font-style: italic; cursor: auto;"></label>
+            </fieldset>
+        </div>
+        <div class="hang">
+            <div class="name">Quốc Tịch</div>
+            <select name="QuocTich" id="" placeholder="Quốc Tịch">
+                <option value="none">Chọn quốc tịch</option>
+                <option value="VietNam">Việt Nam</option>
+                <option value="Rusia">Cuba</option>
+                <option value="American">Nga</option>
+            </select>
+            <p></p>
+            <label id="errorQT" style="color: brown; font-size: 24px; font-style: italic; cursor: auto;"></label>
+        </div>
+        <div class="hang">
+            <div class="name">Ghi Chú</div>
+            <textarea name="" id=""></textarea>
+        </div>
+        <button type="submit" onclick="return check()">Đăng Kí</button>
+    </form>
+</body>
+</html>
