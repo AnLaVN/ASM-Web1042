@@ -52,16 +52,16 @@ function laydon(){
                     <td>${i+1}</td>
                     <td><img src = "${giohang[i][0]}"></td>
                     <td>${giohang[i][1]}</td>
-                    <td>$ ${giohang[i][2]}</td>
+                    <td>${giohang[i][2]}</td>
                     <td><input type="number" min="0" max="10" value="${giohang[i][3]}" onchange="tinhlaidon(this);"></td>
-                    <td>${tt} $</td>
+                    <td>${tt}</td>
                 </tr>
                 `
     }
     ttgh +=`
         <tr>
             <th colspan = "5">TỔNG ĐƠN HÀNG</th>
-            <th id="tongtien">${tong} $</th>
+            <th id="tongtien">${tong}</th>
         </tr>
         `
     document.getElementById("mycart").innerHTML = ttgh;
